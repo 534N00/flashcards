@@ -53,6 +53,41 @@
   color: rgb(160, 9, 9);
 }
 
+.Form {
+  margin: 0, auto;
+  padding: 0, auto;
+}
+
+input[type="text"] {
+  width: 10rem;
+  height: 1.1rem;
+  padding: 10px; /* Add padding to the input */
+  margin: 0.7rem;
+  font-size: 16px; /* Change the font size of the text inside the input */
+  border: 1px solid #ccc; /* Add a border for better visibility */
+  border-radius: 8px;
+}
+
+.guess-plain {
+  box-shadow: rgba(255, 255, 255, 0) 0 0 1.5em;
+  transition: box-shadow 0.7s ease;
+}
+
+.guess-correct {
+  box-shadow: rgb(85, 255, 47) 0 0 1.5em;
+  transition: box-shadow 0.7s ease;
+}
+
+.guess-incorrect {
+  box-shadow: red 0 0 1.5em;
+  transition: box-shadow 0.7s ease;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -64,15 +99,6 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

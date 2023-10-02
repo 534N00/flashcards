@@ -1,8 +1,8 @@
-# Web Development Project 2 - *Linear Algebra Flashcards*
+# Web Development Project 3 - *Linear Algebra Flashcards*
 
 Submitted by: **Sean Craig**
 
-This web app: **Linear Algebra Flashcards is a simple site designed to help me, or anyone else study some important concepts they might have learned by this time in the semester. It features flashcards of course content that you can flip through randomly.**
+This web app: **This is a site to help linear algebra flashcards study for their class by reviewing important vocabulary and concepts for the class. There is functionality to flip cards over to their answer, flip through the cards, and make a guess for what the answer is with a subtle visual queue for a correct or incorrect answer.**
 
 Time spent: **4** hours spent in total
 
@@ -10,17 +10,17 @@ Time spent: **4** hours spent in total
 
 The following **required** functionality is completed:
 
-- [✓] **The title of the card set and some information about it, such as a short description and the total number of cards are displayed**
-- [✓] **A single card at a time is displayed, only showing one of the components of the information pair**
-- [✓] **A list of card pairs is created**
-- [✓] **Clicking on the card shows the corresponding component of the information pair**
-- [✓] **Clicking the next button displays a random new card**
+- [✓] **The user can enter their guess in a box before seeing the flipside of the card**
+- [✓] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [✓] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [✓] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [✓] Cards have different visual styles such as color based on their category
-  - [✓] *visual style implemented*
+- [ ] A shuffle button is used to randomize the order of the cards
+- [✓] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [ ] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
 
@@ -28,23 +28,22 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of the site:
 
-Link: https://imgur.com/a/7SL6Unr
+https://imgur.com/a/4W3pGUp
 
-<img src='https://imgur.com/a/7SL6Unr' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/4W3pGUp.gif' title='Video Walkthrough' width='1878' height='806' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-ScreenToGif
+Gif created with ScreenToGif.
 
 ## Notes
 
-The preloaded CSS you get from making a Vite project is actually quite nice and gives you a great foundation to work with. From there implementing what I had in mind wasn't too difficult. CSS is a hastle, but it alwasys is.
+Spent a good amount of time investigating the possibility of using Google's NLP model API to allow for great leniency with evaluating if answers are right or wrong. There's not enough time and too much risk to work on it alone so I scrapped the idea with only bloat in my node_modules directory to show of it. As always, ChatGPT and YouTube tutorials are a wonderful thing for learning how to reach little goals in development. There's lots of potential to implement more features had I only have had more time to spend for it.
+At some point I want to add card-flip-on-next, flip animation, and actaully figure out how to use Google's NLP API.
 
 ## License
 
-    Copyright [2023] [Sean Craig]
+    Copyright 2023 Sean Craig
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
